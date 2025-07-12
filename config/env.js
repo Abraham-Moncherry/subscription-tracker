@@ -8,4 +8,12 @@ config({ path: `.env.${process.env.NODE_ENV || "development"}.local` });
 
 // Export PORT environment variable for use throughout the application
 // This allows the server to run on the port specified in the .env file
-export const { PORT, NODE_ENV, DB_URI } = process.env;
+export const {
+  PORT,
+  NODE_ENV,
+  DB_URI,
+  JWT_SECRET,
+  JWT_EXPIRES_IN,
+  ARCJET_ENV,
+  ARCJET_KEY,
+} = process.env;
